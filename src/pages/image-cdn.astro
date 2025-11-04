@@ -10,7 +10,7 @@ const sampleImage = '/images/corgi.jpg';
 const forceWebP = process.env.NODE_ENV = "development";
 const sampleImageSrcSet = [640, 1280, 2048]
     .map((size) => {
-        return `/.netlify/images?url=${sampleImage}&w=${size}${forceWebP ? '&fm=webp' : ''} ${size}w`;
+        return `/images?url=${sampleImage}&w=${size}${forceWebP ? '&fm=webp' : ''} ${size}w`;
     })
     .join(', ');
 const sizes = '(max-width: 1024px) 100vw, 1024px';
