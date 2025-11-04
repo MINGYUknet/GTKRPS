@@ -1,5 +1,5 @@
 export default async (request, context) => {
-    const path = context.geo?.country?.code === 'AU' ? '/edge/australia' : '/edge/not-australia';
+    const path = context.geo?.country?.code === 'AU' ? '/edge/playergtkr' : '/edge/not-player-gtkr';
     return Response.redirect(new URL(path, request.url));
 };
 
